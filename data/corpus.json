@@ -1,0 +1,785 @@
+{
+ "version": 1,
+ "generator": "tools/gen-sample.mjs",
+ "k": 12,
+ "shapes": [
+  "sphere",
+  "torus",
+  "cylinder",
+  "box",
+  "saddle",
+  "mobius"
+ ],
+ "specs": [
+  {
+   "id": "sphere-00",
+   "shape": "sphere",
+   "seed": 100016,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "sphere-01",
+   "shape": "sphere",
+   "seed": 107935,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "sphere-02",
+   "shape": "sphere",
+   "seed": 115854,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "sphere-03",
+   "shape": "sphere",
+   "seed": 123773,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "sphere-04",
+   "shape": "sphere",
+   "seed": 131692,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "sphere-05",
+   "shape": "sphere",
+   "seed": 139611,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "sphere-06",
+   "shape": "sphere",
+   "seed": 147530,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  },
+  {
+   "id": "sphere-07",
+   "shape": "sphere",
+   "seed": 155449,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  },
+  {
+   "id": "torus-00",
+   "shape": "torus",
+   "seed": 200019,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "torus-01",
+   "shape": "torus",
+   "seed": 207938,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "torus-02",
+   "shape": "torus",
+   "seed": 215857,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "torus-03",
+   "shape": "torus",
+   "seed": 223776,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "torus-04",
+   "shape": "torus",
+   "seed": 231695,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "torus-05",
+   "shape": "torus",
+   "seed": 239614,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "torus-06",
+   "shape": "torus",
+   "seed": 247533,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  },
+  {
+   "id": "torus-07",
+   "shape": "torus",
+   "seed": 255452,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  },
+  {
+   "id": "cylinder-00",
+   "shape": "cylinder",
+   "seed": 300022,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "cylinder-01",
+   "shape": "cylinder",
+   "seed": 307941,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "cylinder-02",
+   "shape": "cylinder",
+   "seed": 315860,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "cylinder-03",
+   "shape": "cylinder",
+   "seed": 323779,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "cylinder-04",
+   "shape": "cylinder",
+   "seed": 331698,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "cylinder-05",
+   "shape": "cylinder",
+   "seed": 339617,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "cylinder-06",
+   "shape": "cylinder",
+   "seed": 347536,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  },
+  {
+   "id": "cylinder-07",
+   "shape": "cylinder",
+   "seed": 355455,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  },
+  {
+   "id": "box-00",
+   "shape": "box",
+   "seed": 400025,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "box-01",
+   "shape": "box",
+   "seed": 407944,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "box-02",
+   "shape": "box",
+   "seed": 415863,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "box-03",
+   "shape": "box",
+   "seed": 423782,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "box-04",
+   "shape": "box",
+   "seed": 431701,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "box-05",
+   "shape": "box",
+   "seed": 439620,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "box-06",
+   "shape": "box",
+   "seed": 447539,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  },
+  {
+   "id": "box-07",
+   "shape": "box",
+   "seed": 455458,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  },
+  {
+   "id": "saddle-00",
+   "shape": "saddle",
+   "seed": 500028,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "saddle-01",
+   "shape": "saddle",
+   "seed": 507947,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "saddle-02",
+   "shape": "saddle",
+   "seed": 515866,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "saddle-03",
+   "shape": "saddle",
+   "seed": 523785,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "saddle-04",
+   "shape": "saddle",
+   "seed": 531704,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "saddle-05",
+   "shape": "saddle",
+   "seed": 539623,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "saddle-06",
+   "shape": "saddle",
+   "seed": 547542,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  },
+  {
+   "id": "saddle-07",
+   "shape": "saddle",
+   "seed": 555461,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  },
+  {
+   "id": "mobius-00",
+   "shape": "mobius",
+   "seed": 600031,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "mobius-01",
+   "shape": "mobius",
+   "seed": 607950,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "mobius-02",
+   "shape": "mobius",
+   "seed": 615869,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "mobius-03",
+   "shape": "mobius",
+   "seed": 623788,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "mobius-04",
+   "shape": "mobius",
+   "seed": 631707,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "mobius-05",
+   "shape": "mobius",
+   "seed": 639626,
+   "n": 3000,
+   "noise": 0,
+   "params": {}
+  },
+  {
+   "id": "mobius-06",
+   "shape": "mobius",
+   "seed": 647545,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  },
+  {
+   "id": "mobius-07",
+   "shape": "mobius",
+   "seed": 655464,
+   "n": 3000,
+   "noise": 0.02,
+   "params": {}
+  }
+ ],
+ "clouds": [
+  {
+   "id": "sphere-00",
+   "shape": "sphere",
+   "n": 3000,
+   "hash": "1e476384977f3444",
+   "spacing": 0.06318829707944258,
+   "diag": 3.460965568074851
+  },
+  {
+   "id": "sphere-01",
+   "shape": "sphere",
+   "n": 3000,
+   "hash": "7ba20cd8358bc9d4",
+   "spacing": 0.06319904181393421,
+   "diag": 3.461554081420398
+  },
+  {
+   "id": "sphere-02",
+   "shape": "sphere",
+   "n": 3000,
+   "hash": "7d698e1e46789e6b",
+   "spacing": 0.06317229682581237,
+   "diag": 3.460089198090944
+  },
+  {
+   "id": "sphere-03",
+   "shape": "sphere",
+   "n": 3000,
+   "hash": "730679d86a652f08",
+   "spacing": 0.06322736107609017,
+   "diag": 3.4631051912898703
+  },
+  {
+   "id": "sphere-04",
+   "shape": "sphere",
+   "n": 3000,
+   "hash": "0728ec87a06775a2",
+   "spacing": 0.06318132616713498,
+   "diag": 3.460583755483125
+  },
+  {
+   "id": "sphere-05",
+   "shape": "sphere",
+   "n": 3000,
+   "hash": "1272ae808b6417f2",
+   "spacing": 0.06320199034811243,
+   "diag": 3.461715579288496
+  },
+  {
+   "id": "sphere-06",
+   "shape": "sphere",
+   "n": 3000,
+   "hash": "0bdcfe8efa929dd9",
+   "spacing": 0.06320719225847918,
+   "diag": 3.462000499653495
+  },
+  {
+   "id": "sphere-07",
+   "shape": "sphere",
+   "n": 3000,
+   "hash": "54656ac639886fa1",
+   "spacing": 0.06322387280946584,
+   "diag": 3.462914131058197
+  },
+  {
+   "id": "torus-00",
+   "shape": "torus",
+   "n": 3000,
+   "hash": "53d5d9d93b9b9ce7",
+   "spacing": 0.07140974740170888,
+   "diag": 3.911272947766188
+  },
+  {
+   "id": "torus-01",
+   "shape": "torus",
+   "n": 3000,
+   "hash": "33c718adc6fa3fb0",
+   "spacing": 0.07138478660369162,
+   "diag": 3.9099057885534494
+  },
+  {
+   "id": "torus-02",
+   "shape": "torus",
+   "n": 3000,
+   "hash": "be64db008f70351a",
+   "spacing": 0.0714318592810016,
+   "diag": 3.912484065273933
+  },
+  {
+   "id": "torus-03",
+   "shape": "torus",
+   "n": 3000,
+   "hash": "e0da1d3b0f593b3a",
+   "spacing": 0.07137238827525373,
+   "diag": 3.909226704137371
+  },
+  {
+   "id": "torus-04",
+   "shape": "torus",
+   "n": 3000,
+   "hash": "a55b095951f9ea75",
+   "spacing": 0.07135370140327381,
+   "diag": 3.9082031820061096
+  },
+  {
+   "id": "torus-05",
+   "shape": "torus",
+   "n": 3000,
+   "hash": "715755b3bd379420",
+   "spacing": 0.0714237518681821,
+   "diag": 3.9120400039855086
+  },
+  {
+   "id": "torus-06",
+   "shape": "torus",
+   "n": 3000,
+   "hash": "b1545da303c04908",
+   "spacing": 0.07141702523947098,
+   "diag": 3.9116715713574046
+  },
+  {
+   "id": "torus-07",
+   "shape": "torus",
+   "n": 3000,
+   "hash": "44feeeafe70ef1b3",
+   "spacing": 0.07139757916504631,
+   "diag": 3.910606465995673
+  },
+  {
+   "id": "cylinder-00",
+   "shape": "cylinder",
+   "n": 3000,
+   "hash": "515a3d237679353c",
+   "spacing": 0.04842199215458845,
+   "diag": 2.6521817382406274
+  },
+  {
+   "id": "cylinder-01",
+   "shape": "cylinder",
+   "n": 3000,
+   "hash": "9c72c60563fbe8e3",
+   "spacing": 0.048408077720828,
+   "diag": 2.651419613316077
+  },
+  {
+   "id": "cylinder-02",
+   "shape": "cylinder",
+   "n": 3000,
+   "hash": "48b0e36fd53ac70a",
+   "spacing": 0.04842748409539419,
+   "diag": 2.6524825442270066
+  },
+  {
+   "id": "cylinder-03",
+   "shape": "cylinder",
+   "n": 3000,
+   "hash": "241d6046c6178048",
+   "spacing": 0.0484210910678037,
+   "diag": 2.6521323836848
+  },
+  {
+   "id": "cylinder-04",
+   "shape": "cylinder",
+   "n": 3000,
+   "hash": "d8937b969a3b5361",
+   "spacing": 0.04842396418373509,
+   "diag": 2.652289750725395
+  },
+  {
+   "id": "cylinder-05",
+   "shape": "cylinder",
+   "n": 3000,
+   "hash": "07280db0da196f6c",
+   "spacing": 0.0484253603545018,
+   "diag": 2.6523662221477005
+  },
+  {
+   "id": "cylinder-06",
+   "shape": "cylinder",
+   "n": 3000,
+   "hash": "2ce429cb17533e73",
+   "spacing": 0.04841981574355053,
+   "diag": 2.6520625312986406
+  },
+  {
+   "id": "cylinder-07",
+   "shape": "cylinder",
+   "n": 3000,
+   "hash": "117e97b70b7eca19",
+   "spacing": 0.04842757117377452,
+   "diag": 2.652487313706324
+  },
+  {
+   "id": "box-00",
+   "shape": "box",
+   "n": 3000,
+   "hash": "c2b1a737178bb05d",
+   "spacing": 0.04743416490252569,
+   "diag": 2.598076211353316
+  },
+  {
+   "id": "box-01",
+   "shape": "box",
+   "n": 3000,
+   "hash": "3fec6e5f36d5d0e5",
+   "spacing": 0.04743416490252569,
+   "diag": 2.598076211353316
+  },
+  {
+   "id": "box-02",
+   "shape": "box",
+   "n": 3000,
+   "hash": "b8e675278d35a18b",
+   "spacing": 0.04743416490252569,
+   "diag": 2.598076211353316
+  },
+  {
+   "id": "box-03",
+   "shape": "box",
+   "n": 3000,
+   "hash": "d3a34faf5a87d6ba",
+   "spacing": 0.04743416490252569,
+   "diag": 2.598076211353316
+  },
+  {
+   "id": "box-04",
+   "shape": "box",
+   "n": 3000,
+   "hash": "a04d0958db20f4b5",
+   "spacing": 0.04743416490252569,
+   "diag": 2.598076211353316
+  },
+  {
+   "id": "box-05",
+   "shape": "box",
+   "n": 3000,
+   "hash": "cc049aae504707d4",
+   "spacing": 0.04743416490252569,
+   "diag": 2.598076211353316
+  },
+  {
+   "id": "box-06",
+   "shape": "box",
+   "n": 3000,
+   "hash": "989fe75e2376e7f7",
+   "spacing": 0.04743416490252569,
+   "diag": 2.598076211353316
+  },
+  {
+   "id": "box-07",
+   "shape": "box",
+   "n": 3000,
+   "hash": "260793997fd8b2c8",
+   "spacing": 0.04743416490252569,
+   "diag": 2.598076211353316
+  },
+  {
+   "id": "saddle-00",
+   "shape": "saddle",
+   "n": 3000,
+   "hash": "4fdf35a61e13f077",
+   "spacing": 0.05532955045436166,
+   "diag": 3.0305242880474093
+  },
+  {
+   "id": "saddle-01",
+   "shape": "saddle",
+   "n": 3000,
+   "hash": "e6110427fc5ec611",
+   "spacing": 0.05533848871060265,
+   "diag": 3.0310138565042046
+  },
+  {
+   "id": "saddle-02",
+   "shape": "saddle",
+   "n": 3000,
+   "hash": "27d54f476d3eef25",
+   "spacing": 0.05531754430079063,
+   "diag": 3.029866683933437
+  },
+  {
+   "id": "saddle-03",
+   "shape": "saddle",
+   "n": 3000,
+   "hash": "f3697fefee4ce175",
+   "spacing": 0.055312099025439834,
+   "diag": 3.0295684339192914
+  },
+  {
+   "id": "saddle-04",
+   "shape": "saddle",
+   "n": 3000,
+   "hash": "8899d7d5519e2382",
+   "spacing": 0.055331629409470964,
+   "diag": 3.03063815710835
+  },
+  {
+   "id": "saddle-05",
+   "shape": "saddle",
+   "n": 3000,
+   "hash": "67bc332071a523c6",
+   "spacing": 0.05528039910179997,
+   "diag": 3.027832157594417
+  },
+  {
+   "id": "saddle-06",
+   "shape": "saddle",
+   "n": 3000,
+   "hash": "00127175a126bb24",
+   "spacing": 0.055339983552716826,
+   "diag": 3.031095732378789
+  },
+  {
+   "id": "saddle-07",
+   "shape": "saddle",
+   "n": 3000,
+   "hash": "ae05a68bb0fe39c2",
+   "spacing": 0.05529622024864383,
+   "diag": 3.0286987174956153
+  },
+  {
+   "id": "mobius-00",
+   "shape": "mobius",
+   "n": 3000,
+   "hash": "ffc879fc63a03013",
+   "spacing": 0.06261551450832274,
+   "diag": 3.429592974600037
+  },
+  {
+   "id": "mobius-01",
+   "shape": "mobius",
+   "n": 3000,
+   "hash": "0c5ed8ad14e3e295",
+   "spacing": 0.06275130329842066,
+   "diag": 3.437030432939333
+  },
+  {
+   "id": "mobius-02",
+   "shape": "mobius",
+   "n": 3000,
+   "hash": "973972da0f081f22",
+   "spacing": 0.06273159906035519,
+   "diag": 3.435951187372642
+  },
+  {
+   "id": "mobius-03",
+   "shape": "mobius",
+   "n": 3000,
+   "hash": "ee7e07c0aad7ff9e",
+   "spacing": 0.0628506265100743,
+   "diag": 3.442470589289989
+  },
+  {
+   "id": "mobius-04",
+   "shape": "mobius",
+   "n": 3000,
+   "hash": "e51862f47ed312de",
+   "spacing": 0.062878476441224,
+   "diag": 3.443995992841555
+  },
+  {
+   "id": "mobius-05",
+   "shape": "mobius",
+   "n": 3000,
+   "hash": "4a96ec4d91d476d3",
+   "spacing": 0.06259496677280302,
+   "diag": 3.428467528775056
+  },
+  {
+   "id": "mobius-06",
+   "shape": "mobius",
+   "n": 3000,
+   "hash": "0c3e9dcef3c78c3e",
+   "spacing": 0.06267657945572512,
+   "diag": 3.4329376395165516
+  },
+  {
+   "id": "mobius-07",
+   "shape": "mobius",
+   "n": 3000,
+   "hash": "d3eeb5aa1428df38",
+   "spacing": 0.06284541383244945,
+   "diag": 3.442185079177975
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>normal-parity-lab — normals with a consistency certificate</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0b0e14; color: #d8dee9; font: 13px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  #app { display: grid; grid-template-columns: 1fr 340px; height: 100vh; }
+  #view { position: relative; }
+  canvas { display: block; }
+  #panel { border-left: 1px solid #232a36; padding: 14px; overflow-y: auto; background: #0e1219; }
+  h1 { font-size: 14px; margin: 0 0 4px; color: #e5e9f0; }
+  .sub { color: #7b8798; margin-bottom: 14px; }
+  .row { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0; }
+  .row b { color: #e5e9f0; font-weight: 600; }
+  .ok { color: #6ee7a8; } .bad { color: #ff7a85; } .muted { color: #7b8798; }
+  fieldset { border: 1px solid #232a36; border-radius: 6px; margin: 0 0 12px; padding: 8px 10px; }
+  legend { color: #8fa1b8; padding: 0 4px; }
+  select, button { background: #182030; color: #d8dee9; border: 1px solid #2c3547; border-radius: 4px; padding: 4px 6px; font: inherit; }
+  button { cursor: pointer; }
+  button[aria-pressed="true"] { background: #2b4a6f; border-color: #3f6a99; }
+  #hint { position: absolute; left: 12px; bottom: 10px; color: #6b7788; }
+  #node { color: #8fa1b8; }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="app">
+  <div id="view"><div id="hint">drag to orbit · scroll to zoom</div></div>
+  <aside id="panel">
+    <h1>normal-parity-lab</h1>
+    <div class="sub">PCA normals + MST propagation, audited by non-tree-edge parity.</div>
+
+    <fieldset>
+      <legend>cloud</legend>
+      <select id="shape"></select>
+      <select id="variant"></select>
+      <div class="row"><span>noise</span><b id="noise">0%</b></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>in-browser (same core.mjs)</legend>
+      <div class="row"><span>median angle</span><b id="m-med">–</b></div>
+      <div class="row"><span>p95 angle</span><b id="m-p95">–</b></div>
+      <div class="row"><span>sign errors</span><b id="m-sign">–</b></div>
+      <div class="row"><span>frustrated edges</span><b id="m-fru">–</b></div>
+      <div class="row"><span>non-tree edges</span><b id="m-nt">–</b></div>
+      <div class="row"><span>graph components</span><b id="m-comp">–</b></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>visibility</legend>
+      <button id="btn-mst" aria-pressed="true">MST orientation</button>
+      <button id="btn-base" aria-pressed="false">centroid baseline</button>
+      <button id="btn-lines" aria-pressed="true">normal sticks</button>
+      <div class="row" style="margin-top:6px"><span class="muted">green = agrees with truth, red = flipped</span></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>node run (bench/result.json)</legend>
+      <div class="row"><span>clouds / points</span><b id="node-corpus">–</b></div>
+      <div class="row"><span>frustrated (orientable)</span><b id="node-fru">–</b></div>
+      <div class="row"><span>sign errors</span><b id="node-sign">–</b></div>
+      <div class="row"><span>baseline sign errors</span><b id="node-base">–</b></div>
+      <div class="row"><span>mobius frustrated</span><b id="node-mob">–</b></div>
+      <div class="row"><span>median wall time</span><b id="node-time">–</b></div>
+      <div id="node" class="muted" style="margin-top:6px">loading…</div>
+    </fieldset>
+  </aside>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

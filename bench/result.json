@@ -1,0 +1,233 @@
+{
+ "generated_at": "2026-11-19T06:25:45.484Z",
+ "node": "v24.19.0",
+ "platform": "linux/x64",
+ "method": {
+  "k": 12,
+  "cell": "bboxDiag * sqrt(k/n), radius-bounded ring search with exact cell de-collision",
+  "stop_rule": "(ring*cell)^2 >= kth_distance (cells outside have min distance ring*cell)",
+  "orient": "Prim MST over kNN graph, weight = 1 - |dot|; seed sign = away from centroid",
+  "certificate": "every non-tree edge must satisfy dot > 0; otherwise the edge is frustrated",
+  "inner_loop_reps": 5,
+  "warmup": 1
+ },
+ "corpus": {
+  "clouds": 48,
+  "points": 144000,
+  "noisyClouds": 12,
+  "orientable": {
+   "clouds": 40,
+   "points": 120000,
+   "nonTreeEdges": 693730,
+   "frustratedEdges": 0,
+   "frustrationRate": 0,
+   "signErrorPoints": 0,
+   "signErrorRate": 0,
+   "medianAngleDeg": 0.8480367704254625,
+   "meanAngleDeg": 1.7897703665680684,
+   "p95AngleDeg": 5.038944613524785,
+   "maxAngleDeg": 54.06262622406198
+  },
+  "mobius": {
+   "clouds": 8,
+   "points": 24000,
+   "nonTreeEdges": 140237,
+   "frustratedEdges": 672,
+   "frustrationRate": 0.004791888018140719,
+   "perCloudFrustrated": [
+    134,
+    77,
+    66,
+    69,
+    74,
+    90,
+    40,
+    122
+   ]
+  },
+  "baseline": {
+   "signErrorPoints": 18145,
+   "signErrorRate": 0.15120833333333333,
+   "medianAngleDeg": 0.8480367704254625
+  },
+  "perShape": [
+   {
+    "shape": "sphere",
+    "clouds": 8,
+    "points": 24000,
+    "medianAngleDeg": 0.8600034504080943,
+    "p95AngleDeg": 2.11981827777425,
+    "maxAngleDeg": 5.033911021620282,
+    "nonTreeEdges": 138073,
+    "frustratedEdges": 0,
+    "signErrorRate": 0,
+    "baselineSignErrorRate": 0
+   },
+   {
+    "shape": "torus",
+    "clouds": 8,
+    "points": 24000,
+    "medianAngleDeg": 2.448253617936033,
+    "p95AngleDeg": 6.308559576976571,
+    "maxAngleDeg": 14.587380194480431,
+    "nonTreeEdges": 138459,
+    "frustratedEdges": 0,
+    "signErrorRate": 0,
+    "baselineSignErrorRate": 0.2725416666666667
+   },
+   {
+    "shape": "cylinder",
+    "clouds": 8,
+    "points": 24000,
+    "medianAngleDeg": 0.9454557636439999,
+    "p95AngleDeg": 2.366034343109386,
+    "maxAngleDeg": 6.902398016514565,
+    "nonTreeEdges": 138771,
+    "frustratedEdges": 0,
+    "signErrorRate": 0,
+    "baselineSignErrorRate": 0
+   },
+   {
+    "shape": "box",
+    "clouds": 8,
+    "points": 24000,
+    "medianAngleDeg": 0,
+    "p95AngleDeg": 26.75261207668485,
+    "maxAngleDeg": 54.06262622406198,
+    "nonTreeEdges": 139177,
+    "frustratedEdges": 0,
+    "signErrorRate": 0,
+    "baselineSignErrorRate": 0
+   },
+   {
+    "shape": "saddle",
+    "clouds": 8,
+    "points": 24000,
+    "medianAngleDeg": 0.7008088826863679,
+    "p95AngleDeg": 1.7512994834521423,
+    "maxAngleDeg": 4.168995074357414,
+    "nonTreeEdges": 139250,
+    "frustratedEdges": 0,
+    "signErrorRate": 0,
+    "baselineSignErrorRate": 0.4835
+   },
+   {
+    "shape": "mobius",
+    "clouds": 8,
+    "points": 24000,
+    "medianAngleDeg": 0.6314685312716152,
+    "p95AngleDeg": 1.772675391841077,
+    "maxAngleDeg": 4.343719294346608,
+    "nonTreeEdges": 140237,
+    "frustratedEdges": 672,
+    "signErrorRate": 0.4560416666666667,
+    "baselineSignErrorRate": 0.0023333333333333335
+   }
+  ]
+ },
+ "knn_vs_brute": {
+  "points": 1200,
+  "queries": 1200,
+  "k": 12,
+  "grid": {
+   "samples": 5,
+   "min": 4.08489499999996,
+   "median": 4.10628399999996,
+   "p95": 4.162390999999843,
+   "max": 4.205351999999948,
+   "mean": 4.131007599999885,
+   "stddev": 0.04575381871102839,
+   "rsd": 0.01107570431752042
+  },
+  "brute": {
+   "samples": 5,
+   "min": 342.95093599999973,
+   "median": 349.5649330000001,
+   "p95": 352.7635620000001,
+   "max": 357.3470619999998,
+   "mean": 349.61720019999996,
+   "stddev": 5.125984211796579,
+   "rsd": 0.01466170488426839
+  },
+  "speedup": 85.12926358722474
+ },
+ "timing": {
+  "coldStartMs": 25.54546700000037,
+  "per_shape": {
+   "sphere": {
+    "points": 3000,
+    "coldStartMs": 25.54546700000037,
+    "samples": 5,
+    "min": 19.403565999999955,
+    "median": 20.0078110000004,
+    "p95": 20.47575999999981,
+    "max": 20.565979999999854,
+    "mean": 20.006037800000012,
+    "stddev": 0.46500780297033195,
+    "rsd": 0.023243373206579248
+   },
+   "torus": {
+    "points": 3000,
+    "coldStartMs": 25.54546700000037,
+    "samples": 5,
+    "min": 20.51006499999994,
+    "median": 20.783308000000034,
+    "p95": 21.011307000000215,
+    "max": 21.08300199999985,
+    "mean": 20.817244200000005,
+    "stddev": 0.2087530740826793,
+    "rsd": 0.010027891880265268
+   },
+   "cylinder": {
+    "points": 3000,
+    "coldStartMs": 25.54546700000037,
+    "samples": 5,
+    "min": 18.11173000000008,
+    "median": 18.687401000000136,
+    "p95": 19.005889000000025,
+    "max": 19.295702999999776,
+    "mean": 18.712389799999983,
+    "stddev": 0.41252780744732886,
+    "rsd": 0.02204570404189257
+   },
+   "box": {
+    "points": 3000,
+    "coldStartMs": 25.54546700000037,
+    "samples": 5,
+    "min": 14.688999000000422,
+    "median": 14.818321000000196,
+    "p95": 15.18721400000004,
+    "max": 15.630887999999686,
+    "mean": 15.025991400000112,
+    "stddev": 0.34572429282200356,
+    "rsd": 0.023008418121549103
+   },
+   "saddle": {
+    "points": 3000,
+    "coldStartMs": 25.54546700000037,
+    "samples": 5,
+    "min": 21.480699000000186,
+    "median": 21.698387999999795,
+    "p95": 22.29197299999987,
+    "max": 22.530660999999782,
+    "mean": 21.90156539999989,
+    "stddev": 0.4296456883630732,
+    "rsd": 0.019617122361631528
+   },
+   "mobius": {
+    "points": 3000,
+    "coldStartMs": 25.54546700000037,
+    "samples": 5,
+    "min": 23.721859000000222,
+    "median": 24.507634999999937,
+    "p95": 24.68575999999939,
+    "max": 24.71374300000025,
+    "mean": 24.27185840000002,
+    "stddev": 0.45121112475787223,
+    "rsd": 0.018589887816660624
+   }
+  },
+  "median_of_shape_medians": 20.0078110000004,
+  "total_bench_ms": 4282.734197000001
+ }
+}
